@@ -4,17 +4,35 @@ for (const heart of hearts) {
     heart.addEventListener('click', function () {
 
         const heratCount = document.getElementById('heartCount').innerText
-        console.log(Number(heratCount));
         let value = Number(heratCount)
         value++
         document.getElementById('heartCount').innerText = value
-            ;
+            
 
     })
 
 }
+// copy button 
+const copies = document.getElementsByClassName('copy-btn')
+for (const copy of copies) {
+    copy.addEventListener('click', function () {
+
+        const copyCount = document.getElementById('copyCount').innerText
+        let value = Number(copyCount)
+        value++
+        document.getElementById('copyCount').innerText = value
+        const mainCopy = copy.parentNode.parentNode.children[1].children[2].innerText
+        navigator.clipboard.writeText(mainCopy)
+        console.log(mainCopy);
+        
+            
+
+    })
+
+}
+
 // call button
-let coinCount = 100; 
+let coinCount = 100;
 const buttons = document.getElementsByClassName('common-calls')
 for (const button of buttons) {
     button.addEventListener('click', function () {
@@ -25,7 +43,7 @@ for (const button of buttons) {
         const time = new Date().toLocaleTimeString();
 
         const newcart = document.createElement('div')
-        newcart.innerHTML = `<div class="bg-gray-100 flex justify-between items-center p-3 mb-3">
+        newcart.innerHTML = `<div class="bg-gray-100 flex justify-between items-center p-3 mb-3 rounded-lg">
             <div>
                 <h1 class="text-sm font-extrabold">${hotLineName}</h1>
                 <p >${hotLineNumber}</p>
@@ -38,18 +56,15 @@ for (const button of buttons) {
 
         alert(`📞 calling ${hotLineName} ${hotLineNumber}...`)
 
-       
-       if (coinCount < 20) {
-        alert("Not enough coins to make a call!");
-        return;
-      }
 
-    coinCount -= 20; // subtract 20
-    document.getElementById("coinCount").innerText = coinCount;
+        if (coinCount < 20) {
+            alert("Not enough coins to make a call!");
+            newcart.innerHTML = ''
+            return;
+        }
 
-
-
-
+        coinCount -= 20;
+        document.getElementById("coinCount").innerText = coinCount;
 
 
     })
