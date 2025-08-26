@@ -14,8 +14,40 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <h1 class="bg-fuchsia-700">adgjag</h1>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-6 py-4 shadow">
+        <div class="flex items-center space-x-2">
+            <img src="./assets/logo.png"
+                class="w-12 h-12" alt="logo">
+            <span class="font-extrabold text-xl text-green-800">Emergency <br> Service</span>
+        </div>
+        <div class="flex items-center space-x-6">
+            <div class="flex items-center space-x-1 gap-1">
+                <span class="font-extrabold" id="heartCount">0</span>
+                <img src="./assets/heart.png" alt="" class="w-8 h-8">
+            </div>
+            <div class="flex items-center space-x-1 gap-1">
+               
+                <span class="font-extrabold" id="coinCount">100</span>
+               <img src="./assets/coin.png" alt="" class="w-8 h-8">
+            </div>
+            <div class="flex items-center space-x-1">
+               <button class="btn bg-green-600 text-white rounded-full"><span class="font-bold" id="copyCount">0</span>Copy</button>
+                
+            </div>
+        </div>
+    </nav>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]  text-white py-10 text-center">
+    <img src="./assets/logo-dark.png" class="mx-auto w-16 mb-4">
+    <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
+    <p class="mt-2">Government Emergency Services at Your Fingertips – A Project by Government of the People’s Republic of Bangladesh</p>
+  </section>
+
+ 
+
 </body>
 
 </html>
