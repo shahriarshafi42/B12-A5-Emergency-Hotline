@@ -7,7 +7,7 @@ for (const heart of hearts) {
         let value = Number(heratCount)
         value++
         document.getElementById('heartCount').innerText = value
-            
+
 
     })
 
@@ -24,8 +24,10 @@ for (const copy of copies) {
         const mainCopy = copy.parentNode.parentNode.children[1].children[2].innerText
         navigator.clipboard.writeText(mainCopy)
         console.log(mainCopy);
-        
-            
+
+        alert(`Number has been copied : ${mainCopy}`)
+
+
 
     })
 
