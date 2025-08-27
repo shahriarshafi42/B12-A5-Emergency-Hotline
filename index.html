@@ -14,7 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-green-50">
 
     <!-- Navbar -->
     <nav class="flex items-center justify-between bg-white px-6 py-4 shadow">
@@ -23,11 +23,11 @@
             <span class="font-extrabold text-xl text-green-800">Emergency <br> Service</span>
         </div>
         <div class="flex items-center space-x-6">
-            <div class="flex items-center space-x-1 gap-1">
+            <div class="flex items-center space-x-1 gap-1 px-4 py-1 bg-green-50 rounded-full">
                 <span class="font-extrabold" id="heartCount">0</span>
                 <img src="./assets/heart.png" alt="" class="w-8 h-8">
             </div>
-            <div class="flex items-center space-x-1 gap-1">
+            <div class="flex items-center space-x-1 gap-1  px-4 py-1 bg-green-50 rounded-full">
 
                 <span class="font-extrabold" id="coinCount">100</span>
                 <img src="./assets/coin.png" alt="" class="w-8 h-8">
@@ -48,12 +48,12 @@
     </section>
 
     <!-- Main Grid -->
-    <main class="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 max-w-11/12 mx-auto">
+    <main class="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 max-w-29/30 mx-auto">
 
         <!-- Cards Section -->
         <section class="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="cardSection">
-            <!-- Example Card -->
-            <div class="bg-white rounded-2xl shadow p-4 flex flex-col justify-between h-[280px]">
+            <!-- cart-1 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
                 <div class="flex justify-between items-start">
                     <div class=" p-2 bg-red-200 rounded-lg">
                         <img src="./assets/emergency.png" alt="" class="h-8 w-8 ">
@@ -61,23 +61,99 @@
                     <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
                             class="fa-regular fa-heart"></i></span>
                 </div>
-                <div class="text-left mt-2">
+                <div class="text-left ">
 
-                    <h2 class="text-sm font-extrabold">National </h2>
+                    <h2 class="text-sm font-extrabold">National Emergency Number </h2>
                     <p class="text-sm text-gray-600">National Emergency</p>
                     <p class="text-2xl font-bold">999</p>
-                    <button class="btn btn-sm">All</button>
+                    <button class="btn btn-sm rounded-full">All</button>
 
 
                 </div>
-                <div class="flex justify-between mt-4">
+                <div class="flex justify-between ">
                     <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
                             class="fa-regular fa-copy "></i> Copy</button>
                     <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls "><i
                             class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl shadow p-4 flex flex-col justify-between h-[280px]">
+            <!-- cart-2 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
+                <div class="flex justify-between items-start">
+                    <div class=" p-2 bg-blue-200 rounded-lg">
+                        <img src="./assets/police.png" alt="" class="h-8 w-8 ">
+                    </div>
+                    <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
+                            class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="text-left ">
+
+                    <h2 class="text-sm font-extrabold">FPolice Helpline Number</h2>
+                    <p class="text-sm text-gray-600">Police</p>
+                    <p class="text-2xl font-bold">999</p>
+                    <button class="btn btn-sm rounded-full">Police</button>
+
+
+                </div>
+                <div class="flex justify-between ">
+                    <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
+                            class="fa-regular fa-copy "></i> Copy</button>
+                    <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <!-- cart-3 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
+                <div class="flex justify-between items-start">
+                    <div class=" p-2 bg-red-200 rounded-lg">
+                        <img src="./assets/fire-service.png" alt="" class="h-8 w-8 ">
+                    </div>
+                    <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
+                            class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="text-left ">
+
+                    <h2 class="text-sm font-extrabold">Fire Service Number</h2>
+                    <p class="text-sm text-gray-600">Fire Service</p>
+                    <p class="text-2xl font-bold">999</p>
+                    <button class="btn btn-sm rounded-full">Fire</button>
+
+
+                </div>
+                <div class="flex justify-between ">
+                    <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
+                            class="fa-regular fa-copy "></i> Copy</button>
+                    <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <!-- cart-4 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
+                <div class="flex justify-between items-start">
+                    <div class=" p-2 bg-red-200 rounded-lg">
+                        <img src="./assets/ambulance.png" alt="" class="h-8 w-8 ">
+                    </div>
+                    <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
+                            class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="text-left ">
+
+                    <h2 class="text-sm font-extrabold">Ambulance Service</h2>
+                    <p class="text-sm text-gray-600">Ambulance</p>
+                    <p class="text-2xl font-bold">1994-999999</p>
+                    <button class="btn btn-sm rounded-full">Health</button>
+
+
+                </div>
+                <div class="flex justify-between ">
+                    <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
+                            class="fa-regular fa-copy "></i> Copy</button>
+                    <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <!-- cart-5 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
                 <div class="flex justify-between items-start">
                     <div class=" p-2 bg-red-200 rounded-lg">
                         <img src="./assets/emergency.png" alt="" class="h-8 w-8 ">
@@ -85,23 +161,24 @@
                     <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
                             class="fa-regular fa-heart"></i></span>
                 </div>
-                <div class="text-left mt-2">
+                <div class="text-left ">
 
-                    <h2 class="text-sm font-extrabold">National Emergency Number</h2>
-                    <p class="text-sm text-gray-600">National Emergency</p>
-                    <p class="text-2xl font-bold">999</p>
-                    <button class="btn btn-sm">All</button>
+                    <h2 class="text-sm font-extrabold">Women & Child Helpline</h2>
+                    <p class="text-sm text-gray-600">Women & Child Helpline</p>
+                    <p class="text-2xl font-bold">109 </p>
+                    <button class="btn btn-sm rounded-full">Help</button>
 
 
                 </div>
-                <div class="flex justify-between mt-4">
+                <div class="flex justify-between ">
                     <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
                             class="fa-regular fa-copy "></i> Copy</button>
                     <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
                             class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl shadow p-4 flex flex-col justify-between h-[280px]">
+            <!-- cart-6 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
                 <div class="flex justify-between items-start">
                     <div class=" p-2 bg-red-200 rounded-lg">
                         <img src="./assets/emergency.png" alt="" class="h-8 w-8 ">
@@ -109,39 +186,114 @@
                     <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
                             class="fa-regular fa-heart"></i></span>
                 </div>
-                <div class="text-left mt-2">
+                <div class="text-left ">
 
-                    <h2 class="text-sm font-extrabold">National Emergency Number</h2>
-                    <p class="text-sm text-gray-600">National Emergency</p>
-                    <p class="text-2xl font-bold">999</p>
-                    <button class="btn btn-sm">All</button>
+                    <h2 class="text-sm font-extrabold">Anti-Corruption Helpline</h2>
+                    <p class="text-sm text-gray-600">Anti-Corruption</p>
+                    <p class="text-2xl font-bold">106</p>
+                    <button class="btn btn-sm rounded-full">Govt</button>
 
 
                 </div>
-                <div class="flex justify-between mt-4">
+                <div class="flex justify-between ">
                     <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
                             class="fa-regular fa-copy "></i> Copy</button>
                     <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
                             class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
-            <!-- You can duplicate this card with different services -->
+            <!-- cart-7 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
+                <div class="flex justify-between items-start">
+                    <div class=" p-2 bg-red-200 rounded-lg">
+                        <img src="./assets/emergency.png" alt="" class="h-8 w-8 ">
+                    </div>
+                    <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
+                            class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="text-left ">
+
+                    <h2 class="text-sm font-extrabold">Electricity Helpline</h2>
+                    <p class="text-sm text-gray-600">Electricity Outage</p>
+                    <p class="text-2xl font-bold">16216</p>
+                    <button class="btn btn-sm rounded-full">Electricity</button>
+
+
+                </div>
+                <div class="flex justify-between ">
+                    <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
+                            class="fa-regular fa-copy "></i> Copy</button>
+                    <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <!-- cart-8 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
+                <div class="flex justify-between items-start">
+                    <div class=" p-2 bg-red-200 rounded-lg">
+                        <img src="./assets/emergency.png" alt="" class="h-8 w-8 ">
+                    </div>
+                    <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
+                            class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="text-left ">
+
+                    <h2 class="text-sm font-extrabold">Brac Helpline</h2>
+                    <p class="text-sm text-gray-600">Brac</p>
+                    <p class="text-2xl font-bold">16445</p>
+                    <button class="btn btn-sm rounded-full">NGO</button>
+
+
+                </div>
+                <div class="flex justify-between ">
+                    <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
+                            class="fa-regular fa-copy "></i> Copy</button>
+                    <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <!-- cart-9 -->
+            <div class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between h-[280px]">
+                <div class="flex justify-between items-start">
+                    <div class=" p-2 bg-red-200 rounded-lg">
+                        <img src="./assets/emergency.png " alt="" class="h-8 w-8 ">
+                    </div>
+                    <span class="text-xl cursor-pointer red-heart" id="red-heart"><i
+                            class="fa-regular fa-heart"></i></span>
+                </div>
+                <div class="text-left ">
+
+                    <h2 class="text-sm font-extrabold">Bangladesh Railway Helpline </h2>
+                    <p class="text-sm text-gray-600">Bangladesh Railway</p>
+                    <p class="text-2xl font-bold ">163</p>
+                    <button class="btn btn-sm rounded-full">Travel </button>
+
+
+                </div>
+                <div class="flex justify-between ">
+                    <button class="flex-1  rounded-lg  px-3 py-2 mx-1 border-2 border-gray-300 text-sm copy-btn"><i
+                            class="fa-regular fa-copy "></i> Copy</button>
+                    <button class="flex-1 bg-green-600 text-white rounded-lg px-3 py-2 mx-1 text-sm common-calls"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
         </section>
         <!-- History Section -->
         <section class="bg-white rounded-xl shadow p-4 col-span-3">
             <div class="flex justify-between items-center mb-4">
                 <h2 class="font-bold text-lg flex items-center "><i class="fa-solid fa-clock-rotate-left mr-2"></i> Call
                     History</h2>
-                <button id="clear-btn" class=" bg-green-600 text-white rounded-full px-5 py-2 border-none ">Clear</button>
+                <button id="clear-btn"
+                    class=" bg-green-600 text-white rounded-full px-5 py-2 border-none ">Clear</button>
             </div>
             <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
 
-             <!-- ----------- -->
-       <div id="parrent-container">
-         
-       </div>
+            <!-- ----------- -->
+            <div id="parrent-container">
+
+            </div>
         </section>
-       
+
     </main>
 
     <script src="./index.js"></script>
